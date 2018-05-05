@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quizes</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <ul>
+		<%for (let i=0; i<quizzes.length; i++){%>
+			<li>
+				<%= quizzes[i].question; %> : <%= quizzes[i].answer; %>
+			</li>
+		<%}%>
+
+	</ul>
+  </body>
+</html>
